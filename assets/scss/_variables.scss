@@ -1,0 +1,192 @@
+@function vw($x){
+  @return #{100 * $x / 1920}vw;
+}
+
+@font-face{
+  font-family: 'Ubuntu';
+  font-weight: normal;
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+
+@font-face{
+  font-family: "Ubuntu";
+  font-weight: bold;
+  src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+}
+
+@font-face{
+  font-family: "Ubuntu";
+  font-weight: 100;
+  src: url("../fonts/Ubuntu/Ubuntu-Light.ttf");
+}
+
+@font-face{
+  font-family: "Montserrat";
+  font-weight: normal;
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face{
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face{
+  font-family: "Montserrat";
+  font-weight: 900;
+  src: url("../fonts/Montserrat/Montserrat-Black.ttf");
+}
+
+%font-Montserrat{
+  font-family: "Montserrat";
+}
+
+%font-Ubuntu{
+  font-family: "Ubuntu";
+}
+
+$LINE_WITDH: 3rem;
+$LINE_MIN_WITDH: 2px;
+
+$COLOR_PINK_BLUE : #3181F9;
+$COLOR_PINK_RED :  #F96BA7;
+$COLOR_PINK_ORANGE : #FF8B65;
+$COLOR_PINK_FIO : #AE8CA3;
+
+@mixin colorPink($gradient){
+  .pink &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_BLUE_GREEN : #6FFFA0;
+$COLOR_BLUE_LIGHT : #55C0C9;
+$COLOR_BLUE_DARK : #336CFF;
+
+@mixin colorBlue($gradient){
+  .blue &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_ORANGE_LIGHT : #FCD64F;
+$COLOR_ORANGE_DARK : #FF5454;
+
+@mixin colorOrange($gradient){
+  .orange &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_ABOUT_PINK: #F96BA7;
+$COLOR_ABOUT_PURPLE: #7C82D9;
+$COLOR_ABOUT_BLUE: #3181F9;
+
+@mixin colorForAbout($gradient){
+  .forAbout &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_DILLERS_BLUE: #358DFF;
+$COLOR_DILLERS_ORANGE: #FF8B65;
+$COLOR_DILLERS_PINK: #9C8CB0;
+$COLOR_DILLERS_PURPLE: #A18CAD;
+
+@mixin colorForDillers($gradient){
+  .forDillers &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_HOME_BLUE: #358DFF;
+$COLOR_HOME_GREEN: #6FFFA0;
+
+@mixin colorForHome($gradient){
+  .forHome &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_ITEM_LIGHT_BLUE: #2AF7EA;
+$COLOR_ITEM_DARK_BLUE: #2D87FC;
+
+@mixin colorForItem($gradient){
+  .forItem &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_TWOPURPLE_BLUE: #5867EE;
+$COLOR_TWOPURPLE_PINK: #CD5555;
+
+@mixin twoPurple($gradient){
+  .twoPurple &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_TWOBLUE_BLUE: #509AF2;
+$COLOR_TWOBLUE_LBLUE: #62E9E1;
+$COLOR_TWOBLUE_GREEN: #80E66F;
+
+@mixin twoBlue($gradient){
+  .twoBlue &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_ITEMBP_PINK: #CD476F;
+$COLOR_ITEMBP_BLUE: #65C8E7;
+
+@mixin colorForItemBluePink($gradient){
+  .forItemBluePink &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_ITEMP_DARKPINK: #65308A;
+$COLOR_ITEMP_PINK: #F96DAA;
+
+@mixin colorForItemPink($gradient){
+  .forItemPink &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_ITEMG_DARKGREEN: #1C93BA;
+$COLOR_ITEMG_GREEN: #98FBB0;
+
+@mixin colorForItemGreen($gradient){
+  .forItemGreen &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_ITEMB_DARKBLUE: #2E59EF;
+$COLOR_ITEMB_LIGHTBLUE: #65D5F8;
+
+@mixin colorForItemBlue($gradient){
+  .forItemBlue &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_ITEMPO_PURPLE: #9A40D2;
+$COLOR_ITEMPO_ORANGE: #F9BB41;
+
+@mixin colorForItemPurpleOrange($gradient){
+  .forItemPurpleOrange &{
+    background: linear-gradient($gradient);
+  }
+}
+
+$COLOR_ITEMR_RED: #FB3C3C;
+$COLOR_ITEMR_LIGHTRED: #F98989;
+
+@mixin colorForItemRed($gradient){
+  .forItemRed &{
+    background: linear-gradient($gradient);
+  }
+}
