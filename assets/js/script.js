@@ -41,3 +41,19 @@ function range() {
 	console.log(val);
 	document.querySelector('.js__range').style.background = '-webkit-linear-gradient(left, #ccb1f1 0%, #44408f '+val+'%, #FFF '+val+'%, #fff 100%)';
 }
+
+const header = document.querySelector('.header');
+const mobBtn = document.querySelector('.header__mobBtn');
+const lines = document.querySelector('.header__lines');
+const overlay = document.querySelector('.overlay');
+
+mobBtn.addEventListener('click', () => {
+	header.classList.toggle('header-active');
+	lines.classList.toggle('header__lines-active');
+	overlay.classList.toggle('overlay-active');
+})
+overlay.addEventListener('click', () => {
+	header.classList.toggle('header-active');
+	lines.classList.toggle('header__lines-active');
+	overlay.classList.toggle('overlay-active');
+})

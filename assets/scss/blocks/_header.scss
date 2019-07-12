@@ -1,8 +1,11 @@
 .header {
 	height: 8rem;
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-family: $ROBOTO;
 	font-weight: 300;
+	&__mobBtn {
+		display: none;
+	}
 	&__menu {
 		display: flex;
 		height: 100%;

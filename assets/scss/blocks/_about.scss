@@ -3,7 +3,7 @@
 	flex-direction: column;
 	align-items: center;
 	&__title {		
-		font-size: 30px;
+		font-size: 3rem;
 		font-weight: 300;
 		position: relative;
 		text-align: center;
@@ -23,7 +23,7 @@
 	}
 	&__subtitle {
 		font-weight: 300;
-		font-size: 16px;
+		font-size: 1.6rem;
 		text-align: center;
 		width: 498px;
 		margin-top: 2.2vh;
@@ -31,13 +31,12 @@
 	&__text {
 		margin-top: 6vh;
 		text-align-last: left;
-		line-height: 20px;
 		width: 520px;
 		height: 180px;
 		border: 1px solid #b2b2b2;
 		border-radius: 3px;
 		color: #b2b2b2;
-		font-size: 20px;
+		font-size: 1.7rem;
 		font-weight: 400;
 		padding: 10px;
 	}
@@ -46,7 +45,7 @@
 		height: 50px;
 
 		font-weight: 400;
-		font-size: 20px;
+		font-size: 2rem;
 		color: #fff;
 		text-align: center;
 
