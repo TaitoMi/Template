@@ -27,7 +27,7 @@ form {
 			top: -130%;
 			left: 49%;
 			transform: translate(-50%, -50%);
-			background: url('../../../images/presonal_info.png');
+			background: url('../../../images/presonal_info.svg');
 		}
 	}
 	input {
@@ -42,10 +42,10 @@ form {
 	}
 	&__fio {
 		height: 60px;
-		margin-top: 4.5vw;
+		margin-top: 3vw;
 	}
 	&__year {
-		margin-top: 2.2vw;
+		margin-top: 1.6vw;
 		width: 320px;
 		height: 60px;
 		border: 1px solid #e5e5e5;
@@ -57,15 +57,15 @@ form {
 	}
 	&__adress {
 		height: 60px;
-		margin-top: 2.3vw;
+		margin-top: 1.6vw;
 	}
 	&__skype {
 		height: 60px;
-		margin-top: 2.5vw;
+		margin-top: 1.6vw;
 	}
 	&__email {
 		height: 60px;
-		margin-top: 2.3vw;
+		margin-top: 1.7vw;
 	}
 }
 .year {

@@ -21,3 +21,23 @@ for(let i = 0; i < year.length; i++) {
 		document.querySelector('.year__options').classList.toggle('year__options-active');	
 	})
 }
+
+const label = document.querySelectorAll('label'),
+			check = document.querySelectorAll('label > input');
+for (let i = 0; i < label.length; i++) {
+	label[i].addEventListener('click', () => {
+		if (check[i].checked == true) {
+			label[i].classList.add('active');
+		}	else {
+			label[i].classList.remove('active');
+		}
+	})
+	if (check[i].checked == true)	label[i].classList.add('active');
+	
+}
+
+function range() {
+	let val = document.querySelector('.js__range').value;
+	console.log(val);
+	document.querySelector('.js__range').style.background = '-webkit-linear-gradient(left, #ccb1f1 0%, #44408f '+val+'%, #FFF '+val+'%, #fff 100%)';
+}
