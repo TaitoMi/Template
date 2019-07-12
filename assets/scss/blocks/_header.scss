@@ -1,6 +1,8 @@
 .header {
 	height: 8rem;
 	font-size: 14px;
+	font-family: $ROBOTO;
+	font-weight: 300;
 	&__menu {
 		display: flex;
 		height: 100%;

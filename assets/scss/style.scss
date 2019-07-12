@@ -1,5 +1,6 @@
 @import 'variables';
-@import 'blocks/header.scss';
+@import './blocks/header';
+@import './blocks/profile';
 
 html {
 	font-family: $ROBOTO;

@@ -233,10 +233,25 @@ __gulp.task("watchVue", function(){
 
 });
 
+// __gulp.task("watchScss", function(){
+
+// 	//For SCSS
+// 	__gulp.watch(SCSS_WATCH_GLOB).on("change", function(event){
+
+// 		compileScss(
+// 			SCSS_HIDDEN_FILES_REGEXP.test(event.path)
+// 				? SCSS_HIDEN_FILES_PARENT
+// 				: event.path,
+// 			SCSS_OUTPUT_DIR
+// 		);
+
+// 	});
+
+// });
 __gulp.task("watchScss", function(){
 
 	//For SCSS
-	__gulp.watch(SCSS_WATCH_GLOB).on("change", function(event){
+	__gulp.watch(SCSS_WATCH_GLOB, {readDelay: 600}).on("change", function(event){
 
 		compileScss(
 			SCSS_HIDDEN_FILES_REGEXP.test(event.path)
