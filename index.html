@@ -10,17 +10,16 @@
 	<script type="text/javascript" src="assets/js/script.js" defer></script>
 </head>
 <body>
-	<div class="overlay"></div>
 	<nav class="header">
 		<ul class="header__menu">
-			<li class="header__item"><a href="#">Личная информация</a></li>
-			<li class="header__item"><a href="#">Опыт</a></li>
-			<li class="header__item"><a href="#">JavaScript</a></li>
-			<li class="header__item"><a href="#">О себе</a></li>
+			<li class="header__item"><a href="#profile">Личная информация</a></li>
+			<li class="header__item"><a href="#experience">Опыт</a></li>
+			<li class="header__item"><a href="#js">JavaScript</a></li>
+			<li class="header__item"><a href="#about">О себе</a></li>
 		</ul>
 	</nav>
 	<form action="#">
-		<section class="profile">
+		<section class="profile" id="profile">
 			<div class="profile__bg"></div>		
 			<h1 class="profile__title">Анкета</h1>
 			<h3 class="profile__subtitle">Личная информация</h3>
@@ -35,7 +34,7 @@
 			<input class="profile__skype" type="text" placeholder="Skype - gfDaker">
 			<input class="profile__email" type="text" placeholder="E-mail - gfdaker96@gmail.com">
 		</section>
-		<section class="experience">
+		<section class="experience" id="experience">
 			<h3 class="experience__title">
 				Расскажите о своем опыте
 			</h3>
@@ -57,7 +56,7 @@
 						</div>
 			</div>
 		</section>
-		<section class="js">
+		<section class="js" id="js">
 			<h3 class="js__title">Уровень владения JavaScript</h3>
 			<div class="js__levels">
 				<div class="js__level js__level-1">Не владею</div>
@@ -69,6 +68,18 @@
 			<input type="range" min="0"  max="100" value="65" class="js__range" oninput="range()">
 			
 		</section>
+
+		<section class="about" id="about">
+			<h3 class="about__title">Расскажите о себе</h3>
+			<h4 class="about__subtitle">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</h4>
+			<textarea class="about__text" name="aboutText" id="aboutText" cols="30" rows="10"> Меня зовут Иван, мне нравится заниматься вёрсткой и программированием, интересно изучать что-то на первый взгляд "не понятное" и разбираться в этом.
+ Вакансия привлекла обещанием крупных проектов. И зарплатой естественно).
+ Ожидаю интересной и продуктивной работы, так же развития себя как специалиста в сфере которая мне нравится.
+			</textarea>
+			<button class="about__btn">Готово</button>
+		</section>
 	</form>
+	
+	<!-- <div class="overlay"></div> -->
 </body>
 </html>
