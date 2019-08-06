@@ -1,5 +1,4 @@
-assets/node_modules
-assets/css/style.css
-assets/node_modules
-assets/npm-debug.log
-assets/functions.php.bac
+/node_modules/
+/.git/
+/**/Thumbs.db
+/**/*.DS_Store
